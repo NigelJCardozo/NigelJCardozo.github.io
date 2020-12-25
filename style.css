@@ -171,3 +171,8 @@ body {
   position: absolute;
   top: calc(50% + 150px);
 }
+
+.infomation {
+  position: absolute;
+  top: calc(50% + 150px);
+}
