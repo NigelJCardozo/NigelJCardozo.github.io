@@ -7,7 +7,7 @@ const joke = document.getElementById("joke");
 const punchline = document.getElementById("punchline");
 
 let counter = 0
-let jokes =[{Q: "Wishing You and Your family a Merry Christmas!!!" ,A: "From Francisco, Piedade, Nigel and Genelia Cardozo"}]
+let jokes =[{Q: "Wishing You and Your family a Merry Christmas!!!" ,A: ""}]
 let num = Math.floor(Math.random() * jokes.length)
 
 cracker.addEventListener('click', () => {
