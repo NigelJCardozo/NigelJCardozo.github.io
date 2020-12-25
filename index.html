@@ -1,91 +1,57 @@
-<HTML>
-	 
-<HEAD><B><CENTER><font size="50"face="Adine Kirnberg"color="Blue">Merry Christmas!
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-		<TITLE>Merry Christmas!
-		</TITLE>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-p {
-  text-align: center;
-  font-size: 60px;
-  margin-top: 0px;
-}
-</style>
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - A Pen by NigelJCardozo</title>
+  <link rel="stylesheet" href="./style.css">
 
 </head>
 <body>
+<!-- partial:index.partial.html -->
+<div id="crackerWrapper">
+  <h1 id="message">Merry <br> Christmas</h1>
+  <div id="jokeWrap">
+    <h3 id="joke">joke</h3>
+    <h4 id="punchline">punchline</h4>
+  </div>
+  <div id="leftCracker">
+    <div class="handle"></div>
+    <div class="end"></div>
+    <div class="handle2"></div>
+    <div class="ring"></div>
+    <div class="body"></div>
+    <div class="body2"></div>
+    <div class="zigzag">
+      <div class="zig1"></div>
+      <div class="zig1"></div>
+      <div class="zig1"></div>
+      <div class="zig1"></div>
+      <div class="zig1"></div>
+    </div>
+  </div>
+  <div id="rightCracker">
+    <div class="handle"></div>
+    <div class="end"></div>
+    <div class="handle2"></div>
+    <div class="ring"></div>
+    <div class="body"></div>
+    <div class="body2"></div>
+    <div class="zigzag">
+      <div class="zig1"></div>
+      <div class="zig1"></div>
+      <div class="zig1"></div>
+      <div class="zig1"></div>
+      <div class="zig1"></div>
+    </div>
+  </div>
+</div>
+<h1 class="instructions">Tap the cracker to pull it apart</h1>
 
-<p id="demo"></p>
+<h2 class="Infomation"> Created By Nigel J. Cardozo</h2>
 
-<script>
-// Set the date we're counting down to
-var countDownDate = new Date("Dec 25, 2020 00:00:00").getTime();
+<BR>
+<!-- partial -->
+  <script  src="./script.js"></script>
 
-// Update the count down every 1 second
-var x = setInterval(function() {
-
-  // Get today's date and time
-  var now = new Date().getTime();
-    
-  // Find the distance between now and the count down date
-  var distance = countDownDate - now;
-    
-  // Time calculations for days, hours, minutes and seconds
-  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-    
-  // Output the result in an element with id="demo"
-  document.getElementById("demo").innerHTML = days + " days " + hours + " hours "
-  + minutes + " minutes " + seconds + " seconds ";
-    
-  // If the count down is over, write some text 
-  if (distance < 0) {
-    clearInterval(x);
-    document.getElementById("demo").innerHTML = "";
-  }
-}, 1000);
-</script>
-
-</style>
-	</HEAD>
-		<TITLE> 
-		</TITLE>
-
-			<BODY BGColor= red>
-			<B>
-			<p id="demo"></p>
-
-         <font size="15"face="Adine Kirnberg" color="yellow">
-				<B>
-	<marquee scrollamount="10" direction="left" behavior="scroll">Wishing You and your family a Merry Christmas From: Francisco, Piedade, Nigel and Genelia Cardozo</marquee>
-					
-				
-				
-				<marquee scrollamount="11" direction="right" behavior="alternate">
-				<CENTER>
-				<img src="https://image.freepik.com/free-vector/merry-christmas-2020-card_87749-186.jpg"width="600" height="500"/></marquee>
-				<CENTER>
-				<marquee scrollamount="11" direction="left" behavior="alternate">
-				<img src="data:image/jpeg;base64,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"width="600" height="500"/></marquee>
-				<CENTER>
-				<marquee scrollamount="11" direction="right" behavior="alternate">
-				<img src="https://image.freepik.com/free-vector/merry-christmas-happy-new-year-2020-concept-with-snowman-reindeer-bear-penguin_43880-274.jpg"width="600" height="500"/>
-				<img max-width:50%;
-						height:auto;>
-				<CENTER>
-				</marquee>
-				
-				
-
-				
-				<B>
-					<I>
-						<U>
-				<I><font size="5"face="Calibri" color="White"><text-align=RIGHT>Created By Nigel J. Cardozo
-			
-
-			</BODY>
-</HTML>
+</body>
+</html>

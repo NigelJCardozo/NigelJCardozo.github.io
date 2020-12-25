@@ -1,0 +1,173 @@
+@import url(https://fonts.googleapis.com/css?family=Berkshire+Swash);
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: arial;
+  margin: 0;
+  height: 100vh;
+  background: linear-gradient(#c9e1e0, #fff) no-repeat;
+}
+
+#crackerWrapper {
+  cursor: pointer;
+  height: 120px;
+  width: 586px;
+  transform: scaleX(1);
+  text-align: center;
+}
+
+#message {
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  font-family: "Berkshire Swash", cursive;
+  font-size: 30px;
+  color: #b81313;
+  text-shadow: 3px 3px #fff;
+}
+
+@keyframes title {
+  from {
+    font-size: 30px;
+    transform: translate(0px, 0px);
+  }
+  to {
+    font-size: 80px;
+    transform: translate(0px, -250px);
+  }
+}
+#jokeWrap {
+  width: 326px;
+  height: 100px;
+  position: absolute;
+  top: 10px;
+  left: 130px;
+  text-align: center;
+}
+
+@keyframes joke {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+#leftCracker {
+  width: 300px;
+  height: 120px;
+}
+
+@keyframes left {
+  from {
+    transform: translate(0px, 0px) rotate(0deg);
+  }
+  to {
+    transform: translate(-140px, 80px) rotate(-30deg);
+  }
+}
+.end {
+  position: relative;
+  top: -120px;
+  left: 0px;
+  height: 120px;
+  width: 10px;
+  border-radius: 50%;
+  background-color: #c48300;
+}
+
+.handle {
+  position: relative;
+  top: 0px;
+  left: 5px;
+  height: 120px;
+  width: 50px;
+  background-color: #EEAE2D;
+}
+
+.handle2 {
+  position: relative;
+  top: -240px;
+  left: 55px;
+  border-left: 40px solid #EEAE2D;
+  border-top: 25px solid transparent;
+  border-bottom: 25px solid transparent;
+  height: 70px;
+  width: 0;
+}
+
+.ring {
+  position: relative;
+  top: -338px;
+  left: 95px;
+  height: 76px;
+  width: 15px;
+  background-color: #244B96;
+  border-radius: 3px;
+}
+
+.body {
+  position: relative;
+  top: -435px;
+  left: 110px;
+  border-right: 20px solid #c48300;
+  border-top: 25px solid transparent;
+  border-bottom: 25px solid transparent;
+  height: 70px;
+  width: 0;
+}
+
+.body2 {
+  position: relative;
+  top: -556px;
+  left: 130px;
+  height: 120px;
+  width: 150px;
+  background-color: #eda71a;
+}
+
+.zigzag {
+  position: relative;
+  top: -676px;
+  left: 260px;
+  height: 120px;
+  width: 40px;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+}
+
+.zig1 {
+  height: 30px;
+  width: 30px;
+  background-color: #eda71a;
+  transform: translate(5px, -14px) rotate(45deg);
+}
+
+#rightCracker {
+  position: relative;
+  top: -120px;
+  left: 286px;
+  width: 300px;
+  height: 120px;
+  transform: rotate(180deg);
+}
+
+@keyframes right {
+  from {
+    transform: translate(0px, 0px) rotate(180deg);
+  }
+  to {
+    transform: translate(140px, 80px) rotate(210deg);
+  }
+}
+#rightCracker > .zigzag .zig1 {
+  height: 30px;
+  width: 30px;
+  background-color: #eda71a;
+  transform: translate(5px, -1px) rotate(45deg);
+}
+
+.instructions {
+  position: absolute;
+  top: calc(50% + 150px);
+}
