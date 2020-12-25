@@ -111,7 +111,7 @@ body {
   position: relative;
   top: -435px;
   left: 110px;
-  border-right: 20px solid #c48300;
+  border-right: 20px solid #d40820;
   border-top: 25px solid transparent;
   border-bottom: 25px solid transparent;
   height: 70px;
@@ -124,7 +124,7 @@ body {
   left: 130px;
   height: 120px;
   width: 150px;
-  background-color: #eda71a;
+  background-color: #d40820;
 }
 
 .zigzag {
@@ -168,11 +168,6 @@ body {
 }
 
 .instructions {
-  position: absolute;
-  top: calc(50% + 150px);
-}
-
-.infomation {
   position: absolute;
   top: calc(50% + 150px);
 }
