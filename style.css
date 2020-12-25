@@ -1,6 +1,6 @@
 @import url(https://fonts.googleapis.com/css?family=Berkshire+Swash);
 body {
-  display: flex;
+  display: fit;
   justify-content: center;
   align-items: center;
   font-family: arial;
